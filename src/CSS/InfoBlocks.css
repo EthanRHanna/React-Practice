@@ -1,7 +1,8 @@
 .InfoBlocks {
-  background-color: rgb(165, 43, 43);
-  margin: 5px;
-  padding: 5px;
+  background-color: rgb(124, 7, 21);
+  color: rgb(252, 233, 228);
+  margin: 10px;
+  padding: 15px;
   width: 350px;
   text-align: center;
 }
