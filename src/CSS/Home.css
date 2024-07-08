@@ -1,7 +1,5 @@
 .TopMenu {
   display: flex;
-  position: fixed;
-
   justify-content: space-between;
   align-items: center;
 
@@ -10,53 +8,59 @@
   min-height: min-content;
   width: 100%;
 
-  /*
-  background-color: rgb(192, 212, 188);
-  */
   background-image: linear-gradient(rgb(192, 212, 188), rgb(223, 235, 221));
-  padding: 10px;
+  padding: 5px;
 
   font-size: larger;
 }
-
 .IconImage {
   align-self: center;
   height: 50px;
 }
 
-.TopImage {
-  margin-bottom: 5px;
-  padding: 2px;
+.Sections {
+  display: flex;
+}
+
+.MainImage {
+  justify-self: start;
+  text-align: start;
+
+  padding-right: 5px;
+  padding-top: 5px;
+}
+.MainImage img {
   width: 100%;
-  max-height: 1200px;
+}
+
+.SideStuff {
+  justify-self: end;
+  text-align: end;
+
+  margin-top: 5px;
+  margin-right: 5px;
+
+  display: block;
+  width: 50%;
+}
+
+.MenuSection {
+  min-height: 350px;
+  margin: 3px;
+
+  background-image: url(../Images/RSMenu.jpg);
+  padding: 5px;
+}
+
+.Menu {
+  display: flex;
+  justify-content: center;
 }
 
 .InfoSection {
-  margin: 15px;
   padding: 5px;
-
-  /*background-image: url("https://lh3.googleusercontent.com/p/AF1QipPImEkPyZI5BUuoxNYEZa02HC5uX6bfUr6AtEUf=s680-w680-h510");*/
   background-image: url("https://countryroadsmagazine.com/downloads/7904/download/riverside-patty-rings.jpg?cb=ec2e305d716adc31418c8a187f6e34c0");
+
   border: 5px solid;
   border-color: rgb(95, 7, 18);
-}
-
-.Blocks {
-  margin: auto;
-  width: 50%;
-  /*
-  background-color: rgb(192, 212, 188);
-
-  border: 5px solid;
-  border-color: rgb(192, 218, 184);
-  border-radius: 15px;
-  */
-
-  min-width: min-content;
-}
-
-.InfoRow {
-  display: inline-flex;
-  align-items: center;
-  padding: 3px;
 }

@@ -1,8 +1,29 @@
+.Blocks {
+  margin: auto;
+  width: 50%;
+  min-width: min-content;
+}
+
+.InfoRow {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+}
+
+@media only screen and (max-width: 1500px) {
+  .InfoRow {
+    display: block;
+    align-items: center;
+    padding: 3px;
+  }
+}
+
 .InfoBlocks {
   background-color: rgb(124, 7, 21);
   color: rgb(252, 233, 228);
   margin: 10px;
   padding: 15px;
-  width: 350px;
+
+  max-width: 350px;
   text-align: center;
 }

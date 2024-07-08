@@ -27,7 +27,6 @@ function Home() {
           <h1
             style={{
               marginLeft: "20px",
-              marginBottom: "15px",
               fontSize: "45px",
             }}
           >
@@ -41,85 +40,104 @@ function Home() {
         </div>
       </header>
 
-      <div class="TopImage">
-        <img src={Hamburger} class="TopImage" />
-      </div>
+      <div class="Sections">
+        <div class="MainImage">
+          <img src={Hamburger} />
+        </div>
 
-      <div class="InfoSection">
-        <div class="Blocks">
-          <div class="InfoRow">
-            <InfoBlocks
-              header={"About"}
-              info={
-                'We have been opened since 1982 cookiong great food at our downtown location here in Baton Rouge. We moved to our new Siegen location in 2001 and our motto has always been the same "Cook good food, at a reasonable price".'
-              }
-              class="AboutBlock"
-            ></InfoBlocks>
-
-            <InfoBlocks
-              header={"Location"}
-              info={"10933 Cloverland Ave Baton Rouge 70809"}
-              class="LocationBlock"
-            >
-              <div style={{ paddingTop: "15px" }}>
-                <Button
-                  animated
-                  as="a"
-                  href="http://maps.google.com/?q=10933 Cloverland Ave Baton Rouge 70809"
-                >
-                  <ButtonContent visible>Get Directions Now</ButtonContent>
-                  <ButtonContent hidden>
-                    <Icon name="arrow right" />
-                  </ButtonContent>
-                </Button>
-              </div>
-            </InfoBlocks>
+        <div class="SideStuff">
+          <div class="MenuSection">
+            <div class="Menu">
+              <InfoBlocks header={"Menu"} info={""}>
+                <div style={{ paddingTop: "15px" }}>
+                  <Button animated as="a" href="">
+                    <ButtonContent visible>View Our Menu</ButtonContent>
+                    <ButtonContent hidden>
+                      <Icon name="arrow right" />
+                    </ButtonContent>
+                  </Button>
+                </div>
+              </InfoBlocks>
+            </div>
           </div>
-          <div class="InfoRow">
-            <InfoBlocks
-              header={"Contact"}
-              info={
-                <>
-                  <div style={{ display: "inline-flex", margin: "5px" }}>
-                    <div class="tooltip">
-                      <Icon circular name="phone" />
-                      <span class="tooltiptext">Phone</span>
-                    </div>
-                    <p>(225)291-9414</p>
-                  </div>
-                  <br />
-                  <div style={{ display: "inline-flex", margin: "5px" }}>
-                    <div class="tooltip">
-                      <Icon circular name="fax" />
-                      <span class="tooltiptext">Fax</span>
-                    </div>
-                    <p>(225)291-9415</p>
-                  </div>
-                  <br />
-                  <div style={{ display: "inline-flex", margin: "5px" }}>
-                    <div class="tooltip">
-                      <Icon circular name="mail" />
-                      <span class="tooltiptext">Mail</span>
-                    </div>
-                    <p>riversidepatty@bellsouth.net</p>
-                  </div>
-                </>
-              }
-              class="ContactBlock"
-            ></InfoBlocks>
 
-            <InfoBlocks
-              header={"Hours"}
-              info={
-                <Container>
-                  <p>
-                    We’re open Mon - Sat Fri we're open late <br />
-                    <b>10:30AM-3:00PM</b>
-                  </p>
-                </Container>
-              }
-              class="HoursBlock"
-            ></InfoBlocks>
+          <div class="InfoSection">
+            <div class="Blocks">
+              <div class="InfoRow">
+                <InfoBlocks
+                  header={"About"}
+                  info={
+                    'We have been opened since 1982 cookiong great food at our downtown location here in Baton Rouge. We moved to our new Siegen location in 2001 and our motto has always been the same "Cook good food, at a reasonable price".'
+                  }
+                  class="AboutBlock"
+                ></InfoBlocks>
+
+                <InfoBlocks
+                  header={"Location"}
+                  info={"10933 Cloverland Ave Baton Rouge 70809"}
+                  class="LocationBlock"
+                >
+                  <div style={{ paddingTop: "15px" }}>
+                    <Button
+                      animated
+                      as="a"
+                      href="http://maps.google.com/?q=10933 Cloverland Ave Baton Rouge 70809"
+                    >
+                      <ButtonContent visible>Get Directions Now</ButtonContent>
+                      <ButtonContent hidden>
+                        <Icon name="arrow right" />
+                      </ButtonContent>
+                    </Button>
+                  </div>
+                </InfoBlocks>
+              </div>
+              <div class="InfoRow">
+                <InfoBlocks
+                  header={"Contact"}
+                  info={
+                    <>
+                      <div style={{ display: "inline-flex", margin: "5px" }}>
+                        <div class="tooltip">
+                          <Icon circular name="phone" />
+                          <span class="tooltiptext">Phone</span>
+                        </div>
+                        <p>(225)291-9414</p>
+                      </div>
+                      <br />
+                      <div style={{ display: "inline-flex", margin: "5px" }}>
+                        <div class="tooltip">
+                          <Icon circular name="fax" />
+                          <span class="tooltiptext">Fax</span>
+                        </div>
+                        <p>(225)291-9415</p>
+                      </div>
+                      <br />
+                      <div style={{ display: "inline-flex", margin: "5px" }}>
+                        <div class="tooltip">
+                          <Icon circular name="mail" />
+                          <span class="tooltiptext">Mail</span>
+                        </div>
+                        <p>riversidepatty@bellsouth.net</p>
+                      </div>
+                    </>
+                  }
+                  class="ContactBlock"
+                ></InfoBlocks>
+
+                <InfoBlocks
+                  header={"Hours"}
+                  info={
+                    <Container>
+                      <p>
+                        We’re open Mon - Sat Fri we're open late <br />
+                        <b>10:30AM-3:00PM</b>
+                      </p>
+                    </Container>
+                  }
+                  class="HoursBlock"
+                ></InfoBlocks>
+              </div>
+            </div>
           </div>
         </div>
       </div>
