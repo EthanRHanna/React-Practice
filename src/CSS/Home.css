@@ -20,14 +20,12 @@
 
 .Sections {
   display: flex;
+  margin: 5px;
 }
-
 .MainImage {
-  justify-self: start;
-  text-align: start;
-
   padding-right: 5px;
   padding-top: 5px;
+  width: 50%;
 }
 .MainImage img {
   width: 100%;
@@ -45,7 +43,7 @@
 }
 
 .MenuSection {
-  min-height: 350px;
+  min-height: 50%;
   margin: 3px;
 
   background-image: url(../Images/RSMenu.jpg);
@@ -58,6 +56,7 @@
 }
 
 .InfoSection {
+  min-height: 50%;
   padding: 5px;
   background-image: url("https://countryroadsmagazine.com/downloads/7904/download/riverside-patty-rings.jpg?cb=ec2e305d716adc31418c8a187f6e34c0");
 
