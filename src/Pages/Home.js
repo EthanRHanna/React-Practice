@@ -1,6 +1,7 @@
 import "../CSS/Home.css";
 import "../CSS/InfoBlocks.css";
 import "../CSS/ToolTip.css";
+import NavBar from "../Components/NavBar";
 import Hamburger from "../Images/RSHamburger.jpg";
 import { ButtonContent, Button, Icon, Container } from "semantic-ui-react";
 
@@ -18,26 +19,8 @@ function InfoBlocks({ header, info, children }) {
 function Home() {
   return (
     <>
-      <header class="TopMenu">
-        <div style={{ display: "flex" }}>
-          <img
-            src="https://static.wixstatic.com/media/41d000_af9107ca34395bbad48890262d578148.png/v1/fill/w_311,h_128,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/41d000_af9107ca34395bbad48890262d578148.png"
-            class="IconImage"
-          />
-          <h1
-            style={{
-              marginLeft: "20px",
-              fontSize: "45px",
-            }}
-          >
-            RiverSide Patty
-          </h1>
-        </div>
-        <div>
-          <a href="https://www.facebook.com/p/Riverside-patty-100081724278918/">
-            <Icon inverted color="blue" circular name="facebook f" link></Icon>
-          </a>
-        </div>
+      <header>
+        <NavBar />
       </header>
 
       <div class="Sections">
@@ -50,7 +33,7 @@ function Home() {
             <div class="Menu">
               <InfoBlocks header={"Menu"} info={""}>
                 <div style={{ paddingTop: "15px" }}>
-                  <Button animated as="Link" to={"./Menu"}>
+                  <Button animated as="a" href="http://localhost:3000/Menu">
                     <ButtonContent visible>View Our Menu</ButtonContent>
                     <ButtonContent hidden>
                       <Icon name="arrow right" />

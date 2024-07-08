@@ -3,6 +3,7 @@ import "semantic-ui-css/semantic.min.css";
 /* Pages*/
 import Home from "./Pages/Home";
 import Menu from "./Pages/Menu";
+import Location from "./Pages/Location";
 
 import {
   BrowserRouter as Router,
@@ -18,7 +19,11 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/" element={<Menu />} />
+          <Route exact path="/Menu" element={<Menu />} />
+          <Route exact path="/Location" element={<Location />} />
+
+          {/* If the route typed in doesn't match any of the routes above then it reroutes to the Home page "/" */}
+          <Route exact path="*" element={<Navigate to="/" />} />
         </Routes>
       </Router>
     </>
