@@ -50,7 +50,7 @@ function Home() {
             <div class="Menu">
               <InfoBlocks header={"Menu"} info={""}>
                 <div style={{ paddingTop: "15px" }}>
-                  <Button animated as="a" href="">
+                  <Button animated as="Link" to={"./Menu"}>
                     <ButtonContent visible>View Our Menu</ButtonContent>
                     <ButtonContent hidden>
                       <Icon name="arrow right" />
