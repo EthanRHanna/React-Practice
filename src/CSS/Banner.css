@@ -1,0 +1,17 @@
+.BannerDiv {
+  text-align: center;
+  background-image: url("https://countryroadsmagazine.com/downloads/7904/download/riverside-patty-rings.jpg?cb=ec2e305d716adc31418c8a187f6e34c0");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  height: 500px;
+  color: black;
+  box-shadow: 2px 1px 10px, -10px -10px 50px inset;
+}
+.BannerImg {
+  width: 50%;
+  max-height: 500px;
+}
+.BannerWords {
+}
