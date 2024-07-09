@@ -14,4 +14,16 @@
   max-height: 500px;
 }
 .BannerWords {
+  margin: auto;
+  margin-top: 5%;
+  padding: 5px;
+  background-color: rgb(192, 212, 188);
+  max-width: min-content;
+
+  border-radius: 5px;
+
+  font-size: 60px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(0, 0, 0);
 }

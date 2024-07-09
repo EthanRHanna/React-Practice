@@ -1,3 +1,6 @@
-.SelectionMenu {
-  background-image: linear-gradient(rgb(192, 212, 188), rgb(223, 235, 221));
+.Selections {
+  display: flex;
+  max-width: 250px;
+
+  margin: 15px;
 }

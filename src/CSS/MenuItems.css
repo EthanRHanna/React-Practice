@@ -1,0 +1,17 @@
+.Item {
+  margin: 5px;
+  justify-content: center;
+
+  font-size: large;
+}
+
+.Name {
+  width: 100%;
+  justify-content: space-between;
+  display: inline-flex;
+  font-size: 15px;
+}
+.Price {
+  max-width: min-content;
+  font-size: 25px;
+}

@@ -1,0 +1,8 @@
+.MenuBar {
+  padding: 5px;
+  margin: 15px;
+}
+
+.MenuBar div {
+  justify-content: space-between;
+}
