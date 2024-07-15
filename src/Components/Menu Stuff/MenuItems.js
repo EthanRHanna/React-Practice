@@ -3,12 +3,11 @@ import "../../CSS/MenuItems.css";
 
 export function MenuItem({ itemName, price }) {
   return (
-    <Segment color="red" inverted>
+    <Segment inverted>
       <Item class="Item">
         <ItemContent verticalAlign="middle">
           <div class="Name">
             <b>{itemName}</b>
-            <Icon circular name="plus" color="green" inverted />
           </div>
         </ItemContent>
       </Item>

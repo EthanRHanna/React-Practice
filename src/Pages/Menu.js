@@ -4,8 +4,8 @@ import "../CSS/Banner.css";
 
 /* Compnents Imports*/
 import NavBar from "../Components/NavBar";
-import WhatToRender from "../Components/Menu Stuff/CondinalRender";
-import { SideBar } from "../Components/Menu Stuff/SideBarMenu";
+
+import MenuSelection from "../Components/Menu Stuff/MenuSelection";
 
 function Menu() {
   return (
@@ -19,10 +19,7 @@ function Menu() {
       </div>
 
       <div>
-        <SideBar />
-      </div>
-      <div>
-        <WhatToRender />
+        <MenuSelection />
       </div>
     </>
   );
