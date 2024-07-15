@@ -52,20 +52,17 @@ function Home() {
                   info={
                     'We have been opened since 1982 cookiong great food at our downtown location here in Baton Rouge. We moved to our new Siegen location in 2001 and our motto has always been the same "Cook good food, at a reasonable price".'
                   }
-                  class="AboutBlock"
-                ></InfoBlocks>
+                  class="AboutBlock"></InfoBlocks>
 
                 <InfoBlocks
                   header={"Location"}
                   info={"10933 Cloverland Ave Baton Rouge 70809"}
-                  class="LocationBlock"
-                >
+                  class="LocationBlock">
                   <div style={{ paddingTop: "15px" }}>
                     <Button
                       animated
                       as="a"
-                      href="http://maps.google.com/?q=10933 Cloverland Ave Baton Rouge 70809"
-                    >
+                      href="http://maps.google.com/?q=10933 Cloverland Ave Baton Rouge 70809">
                       <ButtonContent visible>Get Directions Now</ButtonContent>
                       <ButtonContent hidden>
                         <Icon name="arrow right" />
@@ -104,21 +101,21 @@ function Home() {
                       </div>
                     </>
                   }
-                  class="ContactBlock"
-                ></InfoBlocks>
+                  class="ContactBlock"></InfoBlocks>
 
                 <InfoBlocks
                   header={"Hours"}
                   info={
                     <Container>
                       <p>
-                        We’re open Mon - Sat Fri we're open late <br />
+                        We’re open Mon - Sat <br />
+                        We’re Open Late on Fridays
+                        <br />
                         <b>10:30AM-3:00PM</b>
                       </p>
                     </Container>
                   }
-                  class="HoursBlock"
-                ></InfoBlocks>
+                  class="HoursBlock"></InfoBlocks>
               </div>
             </div>
           </div>

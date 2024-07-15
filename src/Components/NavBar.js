@@ -14,11 +14,15 @@ function NavBar() {
             style={{
               marginLeft: "20px",
               fontSize: "45px",
-            }}
-          >
+            }}>
             RiverSide Patty
           </h1>
         </div>
+        <div class="PageLinks">
+          <a href="./">Home</a>
+          <a href="./Menu">Menu</a>
+        </div>
+
         <div>
           <a href="https://www.facebook.com/p/Riverside-patty-100081724278918/">
             <Icon inverted color="blue" circular name="facebook f" link></Icon>
