@@ -15,7 +15,6 @@ import {
 function App() {
   return (
     <>
-      {}
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />

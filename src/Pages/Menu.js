@@ -17,6 +17,9 @@ function Menu() {
         <img src="" class="BannerImg" />
         <h1 class="BannerWords">Menu</h1>
       </div>
+      <div>
+        <h2 class="Number">To Place an order call: (225)291-9415</h2>
+      </div>
 
       <div>
         <MenuSelection />

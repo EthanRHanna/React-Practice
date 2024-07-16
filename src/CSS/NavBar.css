@@ -20,3 +20,15 @@
   align-self: center;
   height: 50px;
 }
+
+.PageLinks {
+  display: flex;
+  justify-content: space-between;
+  padding: auto;
+  width: 15%;
+}
+
+a {
+  color: black;
+  font-size: 20px;
+}

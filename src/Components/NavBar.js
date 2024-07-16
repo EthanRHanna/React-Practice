@@ -1,5 +1,6 @@
 import "../CSS/NavBar.css";
 import { Icon } from "semantic-ui-react";
+import NavBarMenu from "./NavBar/NavMenu";
 
 function NavBar() {
   return (
@@ -19,8 +20,7 @@ function NavBar() {
           </h1>
         </div>
         <div class="PageLinks">
-          <a href="./">Home</a>
-          <a href="./Menu">Menu</a>
+          <NavBarMenu />
         </div>
 
         <div>
