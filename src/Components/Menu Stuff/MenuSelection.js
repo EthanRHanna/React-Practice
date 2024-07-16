@@ -1,7 +1,7 @@
 import { Menu, MenuItem } from "semantic-ui-react";
 import React, { Component, createContext, useState } from "react";
 import "../../CSS/MenuSelection.css";
-import WhatToRender from "./CondinalRender";
+import MenuGroup from "./CondinalRender";
 
 const sharedState = createContext();
 
@@ -40,15 +40,15 @@ class SideBarMenu extends Component {
               onClick={this.handleItemClick}
             />
             <MenuItem
-              name="boxes"
+              name="chicken boxes"
               index={3}
-              active={activeItem === "boxes"}
+              active={activeItem === "chicken boxes"}
               onClick={this.handleItemClick}
             />
             <MenuItem
-              name="platters"
+              name="seafood platters"
               index={4}
-              active={activeItem === "platters"}
+              active={activeItem === "seafood platters"}
               onClick={this.handleItemClick}
             />
             <MenuItem
@@ -73,7 +73,7 @@ class SideBarMenu extends Component {
         </div>
 
         <sharedState.Provider value={activeItem}>
-          <WhatToRender contextIndex={activeItem} />
+          <MenuGroup contextIndex={activeItem} />
         </sharedState.Provider>
       </>
     );

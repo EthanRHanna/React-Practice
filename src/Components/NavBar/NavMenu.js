@@ -4,10 +4,13 @@ import { MenuItem, Menu } from "semantic-ui-react";
 import Cookies from "js-cookie";
 
 export default class NavBarMenu extends Component {
-  state = { activeItem: Cookies.get("menuState") };
+  state = {
+    activeItem: Cookies.get("menuState") ? Cookies.get("menuState") : "home",
+  };
 
   handleItemClick = (e, { name }) => {
     Cookies.set("menuState", name);
+    //console.log(Cookies.get("menuState"));
     this.setState({ activeItem: name });
   };
 
@@ -16,24 +19,20 @@ export default class NavBarMenu extends Component {
 
     return (
       <Menu secondary>
-        <MenuItem
-          name="home"
-          link
-          active={activeItem === "home"}
-          onClick={this.handleItemClick}>
-          <Link to={"/"} state={activeItem}>
-            Home
-          </Link>
-        </MenuItem>
-        <MenuItem
-          name="menu"
-          link
-          active={activeItem === "menu"}
-          onClick={this.handleItemClick}>
-          <Link to={"/Menu"} state={activeItem}>
-            Menu
-          </Link>
-        </MenuItem>
+        <Link to={"/"} state={activeItem}>
+          <MenuItem
+            name="home"
+            link
+            active={activeItem === "home"}
+            onClick={this.handleItemClick}></MenuItem>
+        </Link>
+        <Link to={"/Menu"} state={activeItem}>
+          <MenuItem
+            name="menu"
+            link
+            active={activeItem === "menu"}
+            onClick={this.handleItemClick}></MenuItem>
+        </Link>
       </Menu>
     );
   }

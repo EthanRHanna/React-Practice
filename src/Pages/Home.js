@@ -3,6 +3,8 @@ import "../CSS/InfoBlocks.css";
 import "../CSS/ToolTip.css";
 import NavBar from "../Components/NavBar";
 import Hamburger from "../Images/RSHamburger.jpg";
+import { Link } from "react-router-dom";
+import Cookies from "js-cookie";
 import { ButtonContent, Button, Icon, Container } from "semantic-ui-react";
 
 function InfoBlocks({ header, info, children }) {
@@ -33,12 +35,14 @@ function Home() {
             <div class="Menu">
               <InfoBlocks header={"Menu"} info={""}>
                 <div style={{ paddingTop: "15px" }}>
-                  <Button animated as="a" href="http://localhost:3000/Menu">
-                    <ButtonContent visible>View Our Menu</ButtonContent>
-                    <ButtonContent hidden>
-                      <Icon name="arrow right" />
-                    </ButtonContent>
-                  </Button>
+                  <Link to={"/Menu"}>
+                    <Button animated link>
+                      <ButtonContent visible>View Our Menu</ButtonContent>
+                      <ButtonContent hidden>
+                        <Icon name="arrow right" />
+                      </ButtonContent>
+                    </Button>
+                  </Link>
                 </div>
               </InfoBlocks>
             </div>
@@ -59,15 +63,19 @@ function Home() {
                   info={"10933 Cloverland Ave Baton Rouge 70809"}
                   class="LocationBlock">
                   <div style={{ paddingTop: "15px" }}>
-                    <Button
-                      animated
-                      as="a"
-                      href="http://maps.google.com/?q=10933 Cloverland Ave Baton Rouge 70809">
-                      <ButtonContent visible>Get Directions Now</ButtonContent>
-                      <ButtonContent hidden>
-                        <Icon name="arrow right" />
-                      </ButtonContent>
-                    </Button>
+                    <Link
+                      to={
+                        "http://maps.google.com/?q=10933 Cloverland Ave Baton Rouge 70809"
+                      }>
+                      <Button animated link>
+                        <ButtonContent visible>
+                          Get Directions Now
+                        </ButtonContent>
+                        <ButtonContent hidden>
+                          <Icon name="arrow right" />
+                        </ButtonContent>
+                      </Button>
+                    </Link>
                   </div>
                 </InfoBlocks>
               </div>

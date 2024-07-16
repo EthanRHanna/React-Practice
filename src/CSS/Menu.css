@@ -1,9 +1,3 @@
-.Selections {
-  display: flex;
-  max-width: 250px;
-
-  margin: 15px;
-}
 .Number {
   text-align: center;
   margin: 10px;

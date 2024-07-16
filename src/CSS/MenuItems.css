@@ -1,8 +1,14 @@
 .ui.inverted.segment {
+  display: inline-flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+
   background-color: rgb(95, 7, 19);
-  width: 15%;
-  display: inline-block;
+  min-width: 15%;
+  min-height: 100px;
+
   margin: 10px;
+  padding: 10px;
 }
 
 .Item {
@@ -15,9 +21,13 @@
 .Name {
   width: 100%;
   justify-content: space-between;
-  font-size: 15px;
-  margin-bottom: 10px;
+  font-size: 20px;
 }
 .Price {
+  position: absolute;
+  bottom: 0;
   font-size: 25px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

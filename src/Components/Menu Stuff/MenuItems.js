@@ -1,7 +1,7 @@
 import { Icon, Item, ItemContent, ItemGroup, Segment } from "semantic-ui-react";
 import "../../CSS/MenuItems.css";
 
-export function MenuItem({ itemName, price }) {
+export function MenuItem({ itemName, price, children }) {
   return (
     <Segment inverted>
       <Item class="Item">
@@ -11,6 +11,7 @@ export function MenuItem({ itemName, price }) {
           </div>
         </ItemContent>
       </Item>
+      {children}
       <Item class="Item">
         <ItemContent>
           <div class="Price">${price}</div>
