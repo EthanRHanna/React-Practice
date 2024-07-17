@@ -21,7 +21,7 @@ function Menu() {
         <h2 class="Number">To Place an order call: (225)291-9415</h2>
       </div>
 
-      <div>
+      <div style={{ paddingBottom: "50px" }}>
         <MenuSelection />
       </div>
     </>

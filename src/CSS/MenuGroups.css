@@ -1,13 +1,16 @@
 .menu {
   display: flex;
   flex-wrap: wrap;
+
   height: 100%;
+
   justify-content: space-evenly;
+  margin: 25px;
 }
 
 .Notes {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
   font-size: 23px;
 

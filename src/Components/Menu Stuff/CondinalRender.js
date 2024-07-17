@@ -6,16 +6,21 @@ export default function MenuGroup({ contextIndex }) {
   //console.log(contextIndex);
 
   switch (contextIndex) {
-    case "cumbos":
+    case "combos":
       return (
         <>
-          <h3 style={{ textAlign: "center" }}>
-            Note: All Combos come with Fries & a Small Drink
-          </h3>
           <div class="menu">
             <MenuItem itemName={"Burger"} price={"8.97"} />
             <MenuItem itemName={"Fish Burger"} price={"8.97"} />
-            <MenuItem itemName={"Chicken Smawich"} price={"8.97"} />
+            <MenuItem itemName={"Chicken Samwich"} price={"8.97"} />
+          </div>
+
+          <div class="Notes">
+            <div class="Note">
+              <h3 style={{ textAlign: "center" }}>
+                Note: All Combos come with Fries & a Small Drink
+              </h3>
+            </div>
           </div>
         </>
       );
@@ -54,10 +59,6 @@ export default function MenuGroup({ contextIndex }) {
     case "sandwiches":
       return (
         <>
-          <h3 style={{ textAlign: "center" }}>
-            Note: All Sandwiches are Dressed with Mayonnaise, Lettuce, Tomatoes,
-            and Pickles
-          </h3>
           <div class="menu">
             <MenuItem itemName={"Fried Chicken Breast"} price={"5.74"} />
             <MenuItem itemName={"Grilled Chicken Breast"} price={"5.74"} />
@@ -72,16 +73,20 @@ export default function MenuGroup({ contextIndex }) {
             <MenuItem itemName={"MeatBall"} price={"7.49"} />
             <MenuItem itemName={"GrilledCheese"} price={"3.49"} />
           </div>
+          <div class="Notes">
+            <div class="Note">
+              <h3 style={{ textAlign: "center" }}>
+                All Sandwiches are Dressed with Mayonnaise, Lettuce, Tomatoes,
+                and Pickles
+              </h3>
+            </div>
+          </div>
         </>
       );
 
     case "poboys":
       return (
         <>
-          <h3 style={{ textAlign: "center" }}>
-            Note: All PoBoys are dressed with Mayonnaise, Lettuce, Tomatoes, and
-            Pickles
-          </h3>
           <div class="menu">
             <MenuItem itemName={"Turkey and Swiss"} price={"7.49"} />
             <MenuItem itemName={"Chicken Breast"} price={"7.49"} />
@@ -100,6 +105,14 @@ export default function MenuGroup({ contextIndex }) {
             <MenuItem itemName={"Fish"} price={"7.69"} />
             <MenuItem itemName={"Shrimp"} price={"7.69"} />
           </div>
+          <div class="Notes">
+            <div class="Note">
+              <h3 style={{ textAlign: "center" }}>
+                All PoBoys are dressed with Mayonnaise, Lettuce, Tomatoes, and
+                Pickles
+              </h3>
+            </div>
+          </div>
         </>
       );
 
@@ -116,9 +129,6 @@ export default function MenuGroup({ contextIndex }) {
     case "seafood platters":
       return (
         <>
-          <h3 style={{ textAlign: "center" }}>
-            Note: All Platters come with Fries
-          </h3>
           <div class="menu">
             <MenuItem itemName={"Fish Basket"} price={"8.99"} />
             <MenuItem itemName={"Shrimp Basket"} price={"8.99"} />
@@ -135,16 +145,19 @@ export default function MenuGroup({ contextIndex }) {
               </p>
             </MenuItem>
           </div>
+          <div class="Notes">
+            <div class="Note">
+              <h3 style={{ textAlign: "center" }}>
+                All Platters come with Fries
+              </h3>
+            </div>
+          </div>
         </>
       );
 
     case "salads":
       return (
         <>
-          <h3 style={{ textAlign: "center" }}>
-            Avilable Dressings Include: Thousand Island, Ranch, Fat Free Ranch,
-            Italian, Low Calorie Italian, and Blue Cheese
-          </h3>
           <div class="menu">
             <MenuItem itemName={"Dinner Salad"} price={"3.29"} />
             <MenuItem itemName={"Chef Salad"} price={"8.49"} />
@@ -154,19 +167,20 @@ export default function MenuGroup({ contextIndex }) {
             <MenuItem itemName={"Grilled Shrimp Salad"} price={"9.99"} />
             <MenuItem itemName={"Grilled Tilapia Salad"} price={"9.99"} />
           </div>
+          <div class="Notes">
+            <div class="Note">
+              <h3 style={{ textAlign: "center" }}>
+                Avilable Dressings Include: Thousand Island, Ranch, Fat Free
+                Ranch, Italian, Low Calorie Italian, and Blue Cheese
+              </h3>
+            </div>
+          </div>
         </>
       );
 
     case "sides":
       return (
         <>
-          <h3 style={{ textAlign: "center" }}>
-            Avilable Cheese: American, Swiss, Chedder, Pepper Jack
-          </h3>
-          <h3 style={{ textAlign: "center" }}>
-            Avilable Bread & Bun: White, Texes Toast, Wheat Bun or Toast, Rye,
-            and Sour Dough
-          </h3>
           <div class="menu">
             <MenuItem itemName={"French Fries"} price={"2.39"} />
             <MenuItem itemName={"Cajun Curly Q's"} price={"2.99"} />
@@ -189,6 +203,19 @@ export default function MenuGroup({ contextIndex }) {
             <MenuItem itemName={"Boudin Balz"} price={"4.19"} />
             <MenuItem itemName={"Gator Balz"} price={"4.19"} />
           </div>
+          <div class="Notes">
+            <div class="Note">
+              <h3 style={{ textAlign: "center" }}>
+                Avilable Cheese: American, Swiss, Chedder, Pepper Jack
+              </h3>
+            </div>
+            <div class="Note">
+              <h3 style={{ textAlign: "center" }}>
+                Avilable Bread & Bun: White, Texes Toast, Wheat Bun or Toast,
+                Rye, and Sour Dough
+              </h3>
+            </div>
+          </div>
         </>
       );
 
@@ -203,14 +230,22 @@ export default function MenuGroup({ contextIndex }) {
     case "kidsMenu":
       return (
         <>
-          <h3 style={{ textAlign: "center" }}>Dine in only (12 & Under)</h3>
-          <h2 style={{ textAlign: "center" }}>All options come with Fries</h2>
           <div class="menu">
             <MenuItem itemName={"Hamburger"} price={"4.19"} />
             <MenuItem itemName={"Fish Sticks"} price={"4.19"} />
             <MenuItem itemName={"Grilled Cheese"} price={"4.19"} />
             <MenuItem itemName={"Chicken Tenders"} price={"4.19"} />
             <MenuItem itemName={"Corn Dog"} price={"4.19"} />
+          </div>
+          <div class="Notes">
+            <div class="Note">
+              <h3 style={{ textAlign: "center" }}>Dine in only (12 & Under)</h3>
+            </div>
+            <div class="Note">
+              <h2 style={{ textAlign: "center" }}>
+                All options come with Fries
+              </h2>
+            </div>
           </div>
         </>
       );
