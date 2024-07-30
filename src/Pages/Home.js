@@ -1,7 +1,7 @@
 import "../CSS/Home.css";
 import "../CSS/InfoBlocks.css";
 import "../CSS/ToolTip.css";
-import NavBar from "../Components/NavBar";
+import NavBar from "../Components/NavBar/NavBar";
 import Hamburger from "../Images/RSHamburger.jpg";
 import { Link } from "react-router-dom";
 import Cookies from "js-cookie";
@@ -16,6 +16,10 @@ function InfoBlocks({ header, info, children }) {
       {children}
     </div>
   );
+}
+
+function changeNavCookie({ page }) {
+  return Cookies.set("menuState", page);
 }
 
 function Home() {
@@ -56,17 +60,20 @@ function Home() {
                   info={
                     'We have been opened since 1982 cookiong great food at our downtown location here in Baton Rouge. We moved to our new Siegen location in 2001 and our motto has always been the same "Cook good food, at a reasonable price".'
                   }
-                  class="AboutBlock"></InfoBlocks>
+                  class="AboutBlock"
+                ></InfoBlocks>
 
                 <InfoBlocks
                   header={"Location"}
                   info={"10933 Cloverland Ave Baton Rouge 70809"}
-                  class="LocationBlock">
+                  class="LocationBlock"
+                >
                   <div style={{ paddingTop: "15px" }}>
                     <Link
                       to={
                         "http://maps.google.com/?q=10933 Cloverland Ave Baton Rouge 70809"
-                      }>
+                      }
+                    >
                       <Button animated link>
                         <ButtonContent visible>
                           Get Directions Now
@@ -109,7 +116,8 @@ function Home() {
                       </div>
                     </>
                   }
-                  class="ContactBlock"></InfoBlocks>
+                  class="ContactBlock"
+                ></InfoBlocks>
 
                 <InfoBlocks
                   header={"Hours"}
@@ -123,12 +131,14 @@ function Home() {
                       </p>
                     </Container>
                   }
-                  class="HoursBlock"></InfoBlocks>
+                  class="HoursBlock"
+                ></InfoBlocks>
               </div>
             </div>
           </div>
         </div>
       </div>
+      {Cookies.set("menuState", "home")}
     </>
   );
 }

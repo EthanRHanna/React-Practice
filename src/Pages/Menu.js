@@ -3,9 +3,10 @@ import "../CSS/Menu.css";
 import "../CSS/Banner.css";
 
 /* Compnents Imports*/
-import NavBar from "../Components/NavBar";
-
+import NavBar from "../Components/NavBar/NavBar";
 import MenuSelection from "../Components/Menu Stuff/MenuSelection";
+
+import Cookies from "js-cookie";
 
 function Menu() {
   return (
@@ -24,6 +25,7 @@ function Menu() {
       <div style={{ paddingBottom: "50px" }}>
         <MenuSelection />
       </div>
+      {Cookies.set("menuState", "menu")}
     </>
   );
 }

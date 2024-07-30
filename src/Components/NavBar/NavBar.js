@@ -1,6 +1,6 @@
-import "../CSS/NavBar.css";
+import "../../CSS/NavBar.css";
 import { Icon } from "semantic-ui-react";
-import NavBarMenu from "./NavBar/NavMenu";
+import NavBarMenu from "./NavMenu";
 
 function NavBar() {
   return (
@@ -15,7 +15,8 @@ function NavBar() {
             style={{
               marginLeft: "20px",
               fontSize: "45px",
-            }}>
+            }}
+          >
             RiverSide Patty
           </h1>
         </div>
