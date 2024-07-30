@@ -3,6 +3,10 @@
   margin: 15px;
 }
 
+.MenuBar a {
+  font-size: 20px;
+}
+
 .MenuBar div {
   justify-content: space-between;
 }

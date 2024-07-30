@@ -1,34 +1,48 @@
 .TopMenu {
-  position: sticky;
+  position: relative;
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
+  justify-content: space-between;
 
   height: auto;
-  max-height: 125px;
+  max-height: max-content;
   min-height: min-content;
-  width: 100%;
+  min-width: 100%;
 
   background-image: linear-gradient(rgb(223, 235, 221), rgb(192, 212, 188));
-  padding: 5px;
+  padding: 25px;
 
   font-size: larger;
   color: black;
   box-shadow: -20px 10px 50px;
 }
+
 .IconImage {
   align-self: center;
   height: 50px;
 }
 
 .PageLinks {
-  display: flex;
-  justify-content: space-between;
-  padding: auto;
-  width: 15%;
+  max-width: 30%;
+  min-width: 15%;
+
+  max-height: max-content;
 }
 
-a {
+.facebookIcon {
+  float: right;
+}
+
+#NavMenuSelection {
+  display: flex;
+
+  flex: 1;
+}
+
+#NavMenuSelection a {
   color: black;
-  font-size: 20px;
+  font-size: 23px;
+
+  margin: 5px;
 }

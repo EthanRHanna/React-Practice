@@ -25,7 +25,7 @@ function Menu() {
       <div style={{ paddingBottom: "50px" }}>
         <MenuSelection />
       </div>
-      {Cookies.set("menuState", "menu")}
+      <script>{Cookies.set("menuState", "menu")}</script>
     </>
   );
 }

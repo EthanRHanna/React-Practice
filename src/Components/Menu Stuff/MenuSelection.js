@@ -1,7 +1,7 @@
 import { Menu, MenuItem } from "semantic-ui-react";
 import React, { Component, createContext, useState } from "react";
 import "../../CSS/MenuSelection.css";
-import MenuGroup from "./CondinalRender";
+import MenuGroup from "./MenuGroups";
 
 const sharedState = createContext();
 

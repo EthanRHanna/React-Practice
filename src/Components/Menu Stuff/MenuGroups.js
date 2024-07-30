@@ -1,4 +1,4 @@
-import { MenuItem } from "../Menu Stuff/MenuItems";
+import { MenuItem } from "./MenuItems";
 import "../../CSS/MenuGroups.css";
 
 export default function MenuGroup({ contextIndex }) {

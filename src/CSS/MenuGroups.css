@@ -17,7 +17,6 @@
   color: rgb(255, 163, 3);
 
   padding: 25px;
-  margin: 5px;
 }
 
 .Note {
@@ -27,6 +26,7 @@
   text-align: center;
   text-shadow: 5px 5px 45px black;
   padding: 25px;
+  margin: 5px;
 
   background-color: rgba(10, 79, 134, 0.7);
   border: 5px;

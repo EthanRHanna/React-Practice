@@ -24,7 +24,7 @@ function NavBar() {
           <NavBarMenu />
         </div>
 
-        <div>
+        <div class="facebookIcon">
           <a href="https://www.facebook.com/p/Riverside-patty-100081724278918/">
             <Icon inverted color="blue" circular name="facebook f" link></Icon>
           </a>

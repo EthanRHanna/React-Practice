@@ -18,24 +18,26 @@ export default class NavBarMenu extends Component {
     const { activeItem } = this.state;
 
     return (
-      <Menu secondary>
-        <Link to={"/"} state={activeItem}>
-          <MenuItem
-            name="home"
-            link
-            active={activeItem === "home"}
-            onClick={this.handleItemClick}
-          ></MenuItem>
-        </Link>
-        <Link to={"/Menu"} state={activeItem}>
-          <MenuItem
-            name="menu"
-            link
-            active={activeItem === "menu"}
-            onClick={this.handleItemClick}
-          ></MenuItem>
-        </Link>
-      </Menu>
+      <div id="NavBarMenu">
+        <Menu secondary id="NavMenuSelection">
+          <Link to={"/"} state={activeItem}>
+            <MenuItem
+              name="home"
+              link
+              active={activeItem === "home"}
+              onClick={this.handleItemClick}
+            ></MenuItem>
+          </Link>
+          <Link to={"/Menu"} state={activeItem}>
+            <MenuItem
+              name="menu"
+              link
+              active={activeItem === "menu"}
+              onClick={this.handleItemClick}
+            ></MenuItem>
+          </Link>
+        </Menu>
+      </div>
     );
   }
 }

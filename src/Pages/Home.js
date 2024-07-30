@@ -138,7 +138,7 @@ function Home() {
           </div>
         </div>
       </div>
-      {Cookies.set("menuState", "home")}
+      <script>{Cookies.set("menuState", "home")}</script>
     </>
   );
 }
