@@ -1,6 +1,5 @@
 import { MenuItem } from "../Menu Stuff/MenuItems";
 import "../../CSS/MenuGroups.css";
-import { Container, Segment, SegmentGroup } from "semantic-ui-react";
 
 export default function MenuGroup({ contextIndex }) {
   //console.log(contextIndex);
@@ -38,8 +37,8 @@ export default function MenuGroup({ contextIndex }) {
             <MenuItem itemName={"Jalapeno Cheeseburger"} price={"6.19"} />
             <MenuItem itemName={"Double Burger"} price={"7.95"} />
             <MenuItem itemName={"Barbecue Burger"} price={"5.39"} />
-            <MenuItem itemName={"Super Burger"} price={"7.99"} />
             <MenuItem itemName={"Hamburger Steak"} price={"7.59"} />
+            <MenuItem itemName={"Super Burger"} price={"7.99"} />
           </div>
 
           <div class="Notes">
@@ -94,7 +93,8 @@ export default function MenuGroup({ contextIndex }) {
               <p
                 style={{
                   fontSize: "15px",
-                }}>
+                }}
+              >
                 Link or Patty
               </p>
             </MenuItem>
@@ -140,7 +140,8 @@ export default function MenuGroup({ contextIndex }) {
               <p
                 style={{
                   fontSize: "15px",
-                }}>
+                }}
+              >
                 Served with Small Salad
               </p>
             </MenuItem>
